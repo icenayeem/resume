@@ -1,0 +1,33 @@
+.side_navigation{
+        text-align: center;
+        border-right:2px solid #ffc107 ;
+        align-items: center;
+        }
+        .side_navigation img{
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+        html,body{
+            height: 100%;
+        }
+        .container-fluid{
+            min-height: 100%;
+        }
+       a.nav-link{
+           color: whitesmoke;
+           padding: 10px;
+       }
+       a.nav-link:hover{
+           background-color: #e9cd79;
+           color: black;
+       }
+    a.nav-link.active{
+        background-color: #ffc107;
+        color: black;
+        font-weight: bold;
+    }
+    @media screen and (max-width:765px) {
+        .side_navigation{
+            border-right: none;
+        }
+    }

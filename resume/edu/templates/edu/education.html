@@ -1,0 +1,25 @@
+{% extends 'main/basic.html' %}
+{% load static %}
+{% block addcss %}
+ <style>
+     .edu_div{
+         line-height: 1rem;
+         font-size: 20px;
+     }
+     .edu_div b{
+         color:#ffc107;
+     }
+     .edu_div i{
+         color:#0dcaf0;
+     }
+ </style>
+{% endblock addcss %}
+{% block content %}
+ <div class="mx-3">
+   <h2 class="text-warning">Education Qualification</h2>
+   <hr class="bg-warning">
+   {% include "edu/education_div.html" with st='Undergraduation' iname='Rajshahi University' dgname='BSc. Engineering' dname='Information and communication Engineering' py='2022' cg='3.5 out of 4'%}
+   {% include "edu/education_div.html" with st='Higher Secondary' iname='Nawabganj Govt. College' dgname='HSC' dname='Science' py='2016' cg='5 out of 5'%}
+   {% include "edu/education_div.html" with st='Secondary' iname='Krishnagobindapur High School' dgname='SSC' dname='Science' py='2014' cg='5 out of 5'%}
+ </div>
+{% endblock content %}

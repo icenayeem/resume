@@ -1,0 +1,12 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/nav_style.css' %}">
+<img src="{% static 'images/nay1.jpg' %}" alt="" width="100px" height="100px" style="border-radius: 50%;">
+          <h3 style="color: white; font-family: 'Satisfy', cursive;">Nayeem Uddin</h3>
+          <hr class="bg-white">
+          <nav class="flex-column nav text-center">
+            <a href="{% url 'home' %}" class="nav-link mt-2 {{home}}">Home</a>
+            <a href="{% url 'education' %}" class="nav-link mt-2 {{edu}}">Education</a>
+            <a href="{% url 'skills' %}" class="nav-link mt-2 {{skill}}">Skill</a>
+            <a href="{% url 'projects' %}" class="nav-link mt-2 {{pro}}">Projects</a>
+            <a href="{% url 'contact' %}" class="nav-link mt-2 {{cont}}">Contact</a>
+          </nav>

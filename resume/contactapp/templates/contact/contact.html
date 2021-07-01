@@ -1,0 +1,71 @@
+{% extends 'main/basic.html' %}
+{% block addcss %}
+<style>
+.list-unstyled li{
+  text-align: center;
+}
+.i_color{
+    color: #157347;
+}
+.list-unstyled li{
+    text-overflow: clip;
+
+}
+</style>
+{% endblock addcss %}
+{% block content %}
+<h2 class="text-warning">Contact Me</h2>
+<hr class="bg-warning">
+<div class="row text-center">
+<p>Do you have any question?Please do not hasitate to contact.I will come back to you within a matter of hour to help you.</p>
+</div>
+<div class="row mt-2 mx-2" >
+ <div class="col-md-9">
+  <form action="" class="row">
+    <div class="col-md-6">
+        <label for="inputname" class="form-label">Name</label>
+        <input type="text" class="form-control" id="inputname">
+    </div>
+    <div class="col-md-6">
+        <label for="inputemail" class="form-label">Email*</label>
+        <input type="email" class="form-control" id="inputemail">
+    </div>
+    <div class="col-12 mt-4">
+        <label for="inputsubject" class="form-label">Your Subject</label>
+        <input type="text" class="form-control" id="inputsubject" placeholder="">
+    </div>
+    <div class=" col-12 mt-4">
+    <label for="floatingTextarea2" >Your Massage*</label>
+    <textarea class="form-control" id="floatingTextarea2"
+        style="height: 100px"></textarea>
+    </div>
+    <div>
+    <input type="submit" class="btn btn-success mt-3" name="" id="" value="Send" style="width: 70px;">
+    </div>
+  </form>
+ </div>
+ <div class="col-md-3">
+  <div class=" text-center">
+      <div>
+        <i class="fas fa-map-marker-alt fa-2x i_color"></i>
+        <p>ChapaiNawabganj<br>Rajshahi<br>
+        Bangladesh</p>
+        </div>
+    <div>
+        <i class="fas fa-phone fa-2x i_color mt-4"></i>
+        <p>+8801788052066</p>
+    </div>
+    <div>
+        <i class="fas fa-envelope fa-2x i_color mt-4"></i>
+        <p class="text-break">ice.nayeem@gmail.com</p>
+    </div>
+</div>
+ </div>
+</div>
+<div class="mt-4 text-center">
+ <a href="https://www.facebook.com/ice.nayeem" target="_blank" class="mx-2"><i class="fab fa-facebook-f fa-2x"></i></a>
+ <a href="https://twitter.com/ice_nayeem" target="_blank" class="mx-2"><i class="fab fa-twitter fa-2x"></i></a>
+<a href="https://www.instagram.com/ice.nayeem" target="_blank" class="mx-2"><i class="fab fa-instagram fa-2x"></i></a>
+<a href="https://www.linkedin.com/in/icenayeem" target="_blank" class="mx-2"> <i class="fab fa-linkedin-in fa-2x"></i></a>
+</div>
+{% endblock content %}

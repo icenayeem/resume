@@ -1,0 +1,19 @@
+{% extends 'main/basic.html' %}
+{% load static %}
+{% block addcss %}
+
+{% endblock addcss %}
+{% block content %}
+<h2 class="text-warning">Skills</h2>
+<hr class="bg-warning">
+<div class="mx-3">
+{% include 'skill/progress.html' with ptitle='HTML' bg='bg-info' pv='95' ptitle1='CSS' bg1='bg-info' pv1='90' %}
+
+{% include 'skill/progress.html' with ptitle='JavaScript' bg='bg-success' pv='70' ptitle1='JQuery' bg1='bg-success' pv1='85' %}
+
+{% include 'skill/progress.html' with ptitle='React' bg='bg-success' pv='85' ptitle1='python' bg1='bg-warning' pv1='85' %}
+{% include 'skill/progress.html' with ptitle='Django' bg='bg-warning' pv='95' ptitle1='MySql' bg1='bg-primary' pv1='90' %}
+
+{% include 'skill/progress.html' with ptitle='GIT' bg='bg-danger' pv='95' ptitle1='Word/PowerPoint' bg1='bg-secondary' pv1='90' %}
+</div>
+{% endblock content %}

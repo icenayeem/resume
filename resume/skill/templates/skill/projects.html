@@ -1,0 +1,31 @@
+{% extends 'main/basic.html' %}
+{% block addcss %}
+ <style>
+     .pro_div h4{
+      text-decoration: underline;
+     }
+     .pro_div p{
+      font-size: 20px;
+     }
+     .pro_div b{
+         color: yellow;
+     }
+     .pro_div{
+         line-height: 14px;
+     }
+     .pro_div i{
+         font-size: 19px;
+     }
+ </style>
+{% endblock addcss %}
+{% block content %}
+ <h2 class="text-warning">Projects</h2>
+ <hr class="bg-warning">
+ <div class='mx-3'>
+  {% include 'skill/project_div.html' with ptitle='Dron for detect object' aim='helpful for defance to detect enemy......' sir='Dr. Golam Rashed,' sir_t='Faculty,ICE,RU' tec='C,Arduino' mem='Nejam(Arduino),Nayeem(C)' %}
+
+  {% include 'skill/project_div.html' with ptitle='Online exam System(Web Application)' aim='Helpful to continue class and exam when institute off.....' sir='Dr. Firoz Ahmed,' sir_t='Faculty,ICE,RU' tec='Django,React,Jquery' mem='Nayeem(Django,React),Razedul(Jquery)' %}
+
+  {% include 'skill/project_div.html' with ptitle='AmarSikkha.com(Web Application)' aim='Distribute Our Knowledge' sir='Md. Nayeem Uddin,' sir_t='Software Engineer' tec='Django,React,Jquery' mem='Nayeem(Django,React,jquey),Tusher(Design Planner)' %}
+ </div>
+{% endblock content %}

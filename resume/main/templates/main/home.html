@@ -1,0 +1,21 @@
+{% extends 'main/basic.html' %}
+{% load static %}
+{% block content %}
+          <div class="text-center">
+        <img src="{% static 'images/nay1.jpg' %}" alt="" width="230px" class="img-thumbnail bg-warning">
+        </div>
+        <div class="mx-3 mt-2" style="text-align: justify;">
+        <div >
+            <h2 style="font-family: 'Satisfy', cursive;">Hello,</h2>
+        </div>
+        <div class="">
+            <p style="text-indent: 65px;">I am <b class="text-warning">Mohammad Nayeem Uddin.</b>In my student life i worked with some web devlopment project and sloved about 300 programming problems in different judge.I have no professional experiance but i have one that is my confidence.</p>
+            <p>I need an opportunity to grow up my skill and want to add some value for our company.I like to try and slove dificult and different problems. </p>
+            <p><b class="text-warning">NB:</b>Looking for a challanging job (not 8am to 5pm job)where i will have scope to utilize my potential.From where i will be able to enhance my knowledge</p>
+        </div>
+        </div>
+        <div class="text-center">
+            <a href="{% url 'contact' %}" class="btn btn-outline-warning my-4 mx-5">Hire Me</a>
+            <a href="{% url 'contact' %}" class="btn btn-outline-info my-4">Contact</a>
+        </div>
+{% endblock content %}
